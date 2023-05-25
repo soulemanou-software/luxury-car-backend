@@ -184,24 +184,17 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Ernest Anyewe Adonu**
 
-- GitHub: [@principlebrothers](https://github.com/principlebrothers)
-- Twitter: [@adonu_ernest](https://twitter.com/adonu_ernest)
-- LinkedIn: [Ernest Anyewe Adonu](www.linkedin.com/in/ernest-anyewe-adonu)
+👤 **Soulemanou kunchiefuh babanou**
 
-👤 **Haamid Ali**
+- GitHub: [@githubhandle](https://github.com/soulemanou-software/)
+- Twitter: [@twitterhandle](https://twitter.com/soulemanou-software)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/soulemanou-software/)
+👤 **Soulemanou kunchiefuh babanou**
 
-- GitHub: [@Haadiiii](https://github.com/Haadiiii)
-- Twitter: [@HaaDiii_99](https://twitter.com/HaaDiii_99)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/hamid-ali-01a872213/)
-
-👤 **Obiebi David**
-
-- GitHub: [@githubhandle](https://github.com/DuaneDave)
-- Twitter: [@twitterhandle](https://twitter.com/dave_duane)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/david-obiebi)
-
+- GitHub: [@githubhandle](https://github.com/soulemanou-software/)
+- Twitter: [@twitterhandle](https://twitter.com/soulemanou-software)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/soulemanou-software/)
 
 👤 **Soulemanou kunchiefuh babanou**
 
@@ -216,7 +209,7 @@ Example:
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [x] **Update_Reservation**
-- [x] **Update_Bike**
+- [x] **Update_car**
 - [x] **API_Token**
 - [x] **User_Authorization**
 
@@ -228,7 +221,7 @@ Example:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/DuaneDave/Bike-rental-api/issues/new)).
+Feel free to check the [issues page]().
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
