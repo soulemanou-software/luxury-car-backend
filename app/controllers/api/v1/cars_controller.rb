@@ -34,21 +34,21 @@ class Api::V1::CarsController < ApplicationController
 
   def destroy
     car = Car.find_by(id: params[:id])
-    if car
-      car.destroy
-      render json: 'Car has been deleted'
-    end
+    return unless car
+
+    car.destroy
+    render json: 'Car has been deleted'
   end
 
   private
 
   def car_params
     params.require(:car).permit(%i[
-                                    name
-                                    brand
-                                    image
-                                    lending_fee
-                                    description
-                                  ])
+                                  name
+                                  brand
+                                  image
+                                  lending_fee
+                                  description
+                                ])
   end
 end
