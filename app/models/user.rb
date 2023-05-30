@@ -4,10 +4,10 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-         has_many :cars, dependent: :destroy
-         has_many :reservations, dependent: :destroy
+  has_many :cars, dependent: :destroy
+  has_many :reservations, dependent: :destroy
 
-         validates :email, presence: true, uniqueness: true
-         validates :password, presence: true, length: { minimum: 8 }
-         validates :name, presence: true
+  validates :email, presence: true, uniqueness: true
+  validates :password, presence: true, length: { minimum: 8 }
+  validates :name, presence: true
 end
