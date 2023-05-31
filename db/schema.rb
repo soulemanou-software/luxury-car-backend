@@ -10,28 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_05_30_215927) do
+ActiveRecord::Schema[7.0].define(version: 2023_05_31_143620) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "cars", force: :cascade do |t|
-    t.text "photo"
     t.string "name"
-    t.text "description"
     t.string "brand"
-    t.integer "lending_fee"
+    t.string "image"
+    t.float "lending_fee"
+    t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "user_id", null: false
-    t.index ["user_id"], name: "index_cars_on_user_id"
   end
 
   create_table "reservations", force: :cascade do |t|
     t.date "reservation_date"
-    t.integer "lending_fee"
-    t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "user_id", null: false
     t.bigint "car_id", null: false
     t.index ["car_id"], name: "index_reservations_on_car_id"
     t.index ["user_id"], name: "index_reservations_on_user_id"
@@ -39,18 +36,19 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_30_215927) do
 
   create_table "users", force: :cascade do |t|
     t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string "jti", null: false
     t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["jti"], name: "index_users_on_jti", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "cars", "users"
   add_foreign_key "reservations", "cars"
   add_foreign_key "reservations", "users"
 end
