@@ -51,6 +51,7 @@ group :development do
   # gem "spring"
 end
 gem 'devise'
+gem 'devise-jwt'
 gem 'jsonapi-serializer'
 gem 'rswag'
 gem 'rubocop', '>= 1.0', '< 2.0'

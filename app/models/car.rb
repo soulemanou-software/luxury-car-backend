@@ -1,12 +1,10 @@
 class Car < ApplicationRecord
-  belongs_to :user
   has_many :reservations, dependent: :destroy
-  has_many :categories, dependent: :destroy
+  has_many :users, through: :reservations
 
-  validates :user_id, presence: true
-  validates :photo, presence: true
-  validates :name, presence: true, length: { maximum: 100 }
-  validates :brand, presence: true, length: { maximum: 50 }
-  validates :description, presence: true, length: { maximum: 500 }
-  validates :lending_fee, presence: true, numericality: { greater_than_or_equal_to: 0 }
+  validates :name, presence: true, length: { in: 3..25 }
+  validates :brand, presence: true, length: { in: 3..25 }
+  validates :image, presence: true
+  validates :lending_fee, presence: true, length: { in: 1..1000 }, numericality: { only_integer: true }
+  validates :description, presence: true, length: { in: 5..1000 }
 end
