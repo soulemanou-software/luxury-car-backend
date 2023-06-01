@@ -1,11 +1,11 @@
 class Api::V1::CarsController < ApplicationController
   def index
-    cars = Cars.all
+    cars = Car.all
     render json: cars, status: 200
   end
 
   def show
-    car = Cars.find_by(id: params[:id])
+    car = Car.find_by(id: params[:id])
     if car
       render json: cars, status: 200
     else
@@ -16,7 +16,7 @@ class Api::V1::CarsController < ApplicationController
   end
 
   def create
-    car = Cars.new(
+    car = Car.new(
       name: car_params[:name],
       brand: car_params[:brand],
       image: car_params[:image],
