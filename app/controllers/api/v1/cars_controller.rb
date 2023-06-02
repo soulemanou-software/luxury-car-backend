@@ -10,7 +10,7 @@ class Api::V1::CarsController < ApplicationController
       render json: cars, status: 200
     else
       render json: {
-        error: 'Cars not found'
+        error: 'Car not found'
       }
     end
   end
