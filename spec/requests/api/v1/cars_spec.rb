@@ -68,7 +68,7 @@ RSpec.describe 'api/v1/cars', type: :request do
                                  description: 'A great car'
                                }
                              ])
-        end
+       end
         schema type: :array,
                items: {
                  type: :object,
