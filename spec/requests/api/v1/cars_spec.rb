@@ -8,21 +8,21 @@ RSpec.describe 'api/v1/cars', type: :request do
       response '200', 'successful' do
         before do
           @cars = Car.create([
-                                   {
-                                     name: 'Lexus',
-                                     brand: 'Toyota',
-                                     image: 'www.sample-image.com',
-                                     lending_fee: 100.0,
-                                     description: 'A nice car'
-                                   },
-                                   {
-                                     name: 'Hilux',
-                                     brand: 'Jac',
-                                     image: 'www.sample-image.com',
-                                     lending_fee: 100.0,
-                                     description: 'A strong car'
-                                   }
-                                 ])
+                               {
+                                 name: 'Lexus',
+                                 brand: 'Toyota',
+                                 image: 'www.sample-image.com',
+                                 lending_fee: 100.0,
+                                 description: 'A nice car'
+                               },
+                               {
+                                 name: 'Hilux',
+                                 brand: 'Jac',
+                                 image: 'www.sample-image.com',
+                                 lending_fee: 100.0,
+                                 description: 'A strong car'
+                               }
+                             ])
         end
         schema type: :array,
                items: {
@@ -53,21 +53,21 @@ RSpec.describe 'api/v1/cars', type: :request do
       response(200, 'successful') do
         before do
           @cars = Car.create([
-                                   {
-                                     name: 'Beatle',
-                                     brand: 'Peogeot',
-                                     image: 'www.sample-image.com',
-                                     lending_fee: 100.0,
-                                     description: 'A fast car'
-                                   },
-                                   {
-                                     name: 'GLK',
-                                     brand: 'Benz',
-                                     image: 'www.sample-image.com',
-                                     lending_fee: 100.0,
-                                     description: 'A great car'
-                                   }
-                                 ])
+                               {
+                                 name: 'Beatle',
+                                 brand: 'Peogeot',
+                                 image: 'www.sample-image.com',
+                                 lending_fee: 100.0,
+                                 description: 'A fast car'
+                               },
+                               {
+                                 name: 'GLK',
+                                 brand: 'Benz',
+                                 image: 'www.sample-image.com',
+                                 lending_fee: 100.0,
+                                 description: 'A great car'
+                               }
+                             ])
         end
         schema type: :array,
                items: {

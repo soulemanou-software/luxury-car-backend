@@ -1,7 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe 'Cars', type: :model do
-  subject { Car.new(name: 'Lexus', brand: 'toyota', image: 'wwww.sample-image.com', lending_fee: 20.0, description: 'a smart and durable car') }
+  subject do
+    Car.new(name: 'Lexus', brand: 'toyota', image: 'wwww.sample-image.com', lending_fee: 20.0,
+            description: 'a smart and durable car')
+  end
 
   before { subject.save }
 

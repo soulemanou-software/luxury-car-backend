@@ -19,7 +19,10 @@ RSpec.describe 'users', type: :request do
       }
 
       response '200', 'Signed up sucessfully.' do
-        let(:user) { { user: { full_name: 'Chukwuma Paul Mosanya', email: 'solarmails2@luxurycarslending.com', password: 'password' } } }
+        let(:user) do
+          { user: { full_name: 'Chukwuma Paul Mosanya', email: 'solarmails2@luxurycarslending.com',
+                    password: 'password' } }
+        end
         run_test!
       end
 
