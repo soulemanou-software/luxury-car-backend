@@ -26,8 +26,8 @@ RSpec.describe Reservation, type: :model do
       expect(@reservation).to_not be_valid
     end
 
-    it 'is not valid without a house_id' do
-      @reservation.house_id = nil
+    it 'is not valid without a car_id' do
+      @reservation.car_id = nil
       @reservation.save
       expect(@reservation).to_not be_valid
     end

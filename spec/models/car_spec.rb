@@ -2,8 +2,8 @@ require 'rails_helper'
 
 RSpec.describe 'Cars', type: :model do
   subject do
-    Car.new(name: 'Lexus', brand: 'toyota', image: 'wwww.sample-image.com', lending_fee: 20.0,
-            description: 'a smart and durable car')
+    Car.new(name: 'Lexus', brand: 'Toyota', image: 'wwww.sample-image.com', lending_fee: 200.0,
+            description: 'Agreat car')
   end
 
   before { subject.save }
@@ -43,12 +43,12 @@ RSpec.describe 'Cars', type: :model do
     expect(subject).to_not be_valid
   end
 
-  it 'brand name should not be too short' do
+  it 'brand should not be too short' do
     subject.brand = 'a'
     expect(subject).to_not be_valid
   end
 
-  it 'brand name should not be too long' do
+  it 'brand should not be too long' do
     subject.brand = 'a' * 25
     expect(subject).to_not be_valid
   end
@@ -63,7 +63,7 @@ RSpec.describe 'Cars', type: :model do
     expect(subject).to_not be_valid
   end
 
-  it 'appartment fee should allow valid values' do
+  it 'lending fee should allow valid values' do
     subject.lending_fee = 100.0
     expect(subject).to_not be_valid
   end
