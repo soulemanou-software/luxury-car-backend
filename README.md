@@ -146,7 +146,9 @@ To run the project, execute the following command:
 To run tests, run the following command:
 
 ```sh
-  rspec spec
+rspec ./spec/models
+rspec ./spec/
+rspec ./spec/user/request
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
