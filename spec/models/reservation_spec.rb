@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe Reservation, type: :model do
   before :each do
     @user = User.create(full_name: 'Paul', email: 'solarmails2@luxurycarslending.com', password: 'password')
-    @house = Car.create(name: 'Lexus', brand: 'Toyota', image: 'http://image_url.jpg', description: 'Car description',
+    @car = Car.create(name: 'Lexus', brand: 'Toyota', image: 'http://image_url.jpg', description: 'Car description',
                         lending_fee: 100)
     @reservation = Reservation.new(reservation_date: '2020-01-01', user_id: @user.id, car_id: @car.id)
   end
