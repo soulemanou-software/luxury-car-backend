@@ -1,5 +1,5 @@
 require 'swagger_helper'
-
+# rubocop:disable Metrics/MethodLength 
 RSpec.describe 'api/v1/cars', type: :request do
   path '/api/v1/cars' do
     get('list cars') do
@@ -88,3 +88,4 @@ RSpec.describe 'api/v1/cars', type: :request do
     end
   end
 end
+# rubocop:disable Metrics/MethodLength
