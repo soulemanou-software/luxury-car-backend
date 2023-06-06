@@ -12,7 +12,7 @@ RSpec.describe 'api/v1/reservations', type: :request do
         before do
           @user = User.create(full_name: 'Chukwuma Paul Mosanya', email: 'solarmails2@luxurycarslending.com',
                               password: 'password')
-          @car = car.create(name: 'Lexus', brand: 'Toyota', lending_fee: 2000, description: 'abcde abce', image: 'https://www.car-images.png')
+          @car = Car.create(name: 'Lexus', brand: 'Toyota', lending_fee: 2000, description: 'abcde abce', image: 'https://www.car-images.png')
           @reservation = Reservation.create(user_id: @user.id, car_id: @car.id, reservation_date: Time.now)
         end
 
@@ -59,7 +59,7 @@ RSpec.describe 'api/v1/reservations', type: :request do
         before do
           @user = User.create(full_name: 'Chukwuma Paul Mosanya', email: 'solarmails2@luxurycarslending.com',
                               password: 'password')
-          @car = car.create(name: 'Ford x6', brand: 'Ford', lending_fee: 2000, description: 'abcde abce', image: 'https://www.car-images.png')
+          @car = Car.create(name: 'Ford x6', brand: 'Ford', lending_fee: 2000, description: 'abcde abce', image: 'https://www.car-images.png')
         end
         let(:user_id) { @user.id }
         let(:booking) { { user_id: @user.id, car_id: @car.id, reservation_date: Time.now } }
