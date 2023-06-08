@@ -14,7 +14,7 @@ user_one = User.create({full_name: 'Paul', email: 'solarmails2@mail.com', passwo
 puts "Creating Cars"
 cars = Car.create(
     {
-        name:"Cars 1",
+        name:"Coupe",
         brand:"BMW",
         image: 'https://images.pexels.com/photos/977003/pexels-photo-977003.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         lending_fee:2,
@@ -22,7 +22,7 @@ cars = Car.create(
 
     });
 cars = Car.create({
-        name:"Car 2",
+        name:"Alpine",
         brand:"Audi",
         image: 'https://images.pexels.com/photos/1592384/pexels-photo-1592384.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         lending_fee:5,
@@ -30,7 +30,7 @@ cars = Car.create({
 
     });
 cars = Car.create({
-        name:"Car 3",
+        name:"Lamborghini",
         brand:"Toyota",
         image: 'https://images.pexels.com/photos/3752194/pexels-photo-3752194.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         lending_fee:8,
@@ -38,8 +38,8 @@ cars = Car.create({
 
     });
 cars = Car.create({
-        name:"Cars 4",
-        brand:"Dallas",
+        name:"Mercedes",
+        brand:"Benz",
         image: 'https://images.pexels.com/photos/164654/pexels-photo-164654.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         lending_fee:10,
         description: 'Orange Mercedes Benz G63.',

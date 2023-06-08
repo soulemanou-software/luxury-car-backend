@@ -7,7 +7,7 @@ class Api::V1::CarsController < ApplicationController
   def show
     car = Car.find_by(id: params[:id])
     if car
-      render json: cars, status: 200
+      render json: car, status: 200
     else
       render json: {
         error: 'Car not found'
